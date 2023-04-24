@@ -1,0 +1,26 @@
+.title-commerce{
+    text-align: center;
+}
+
+.display-vente {
+ display: flex;
+ justify-content: center;
+}
+
+.Nike {
+    width: 450px;
+    height: 450px;
+}
+.Vip {
+    width: 450px;
+    height: 450px;
+}
+.Adidas {
+    width: 450px;
+    height: 450px;
+}
+
+.legende {
+    display: flex;
+    justify-content: space-around;
+}

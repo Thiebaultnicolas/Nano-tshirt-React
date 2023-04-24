@@ -10,7 +10,7 @@ function Landing() {
               <h1 className='title'>Nano Shirt</h1>
               <h2 className='subtitle'>Habillez-vous avec style sans vous ruiner !</h2>
             </div>
-            <a class="button-line" href="#scroll">ICI</a> 
+            <a className="button-line" href="#scroll">ICI</a> 
           </div>
         </div>
     </div>
