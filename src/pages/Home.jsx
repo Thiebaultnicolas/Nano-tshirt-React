@@ -7,12 +7,12 @@ import Header from '../components/Header'
 const Home = () => {
     return (
         <>
-        <header>
+        <div>
         <div className='first-screen'>
             <Header/>
             <Landing/>
         </div>
-        </header>
+        </div>
        
         <div id="scroll" className='second-screen'>
              <Commerce/>

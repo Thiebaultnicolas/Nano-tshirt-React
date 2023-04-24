@@ -1,17 +1,22 @@
-.site-header.fixed {
-    position: fixed;
-}
+
 
 .site-header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     background-color: transparent;
     padding: 20px 0;
-    transition: all 0.3s ease-out;
-    background-color: #03224c;
+    transition: all 0.6s ease-out;
 }
+
+.sticky {
+    padding: 0px 0px 5px 0px;
+    opacity: 0.7;
+    background: #03224c;
+}
+
 
 .container, .container-fluid {
     margin-right: auto;
@@ -45,17 +50,16 @@ ul li a {
     display:block;
     float:left;   
     width:100px;
-    background-color:#6495ED;
     color:black;
     text-decoration:none;
     text-align:center;
     padding:5px;
-    border:2px solid;
     /*pour avoir un effet "outset" avec IE :*/
-    border-color:#DCDCDC #696969 #696969 #DCDCDC;
+    letter-spacing: 2px;
 }
    
 ul li a:hover {
-    background-color:#D3D3D3;
-    border-color:#696969 #DCDCDC #DCDCDC #696969;
+    color:#D3D3D3;
+    transition: all 0.4s linear;
+    
 } 
