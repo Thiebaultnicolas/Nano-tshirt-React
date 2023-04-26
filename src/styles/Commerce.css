@@ -4,23 +4,34 @@
 
 .display-vente {
  display: flex;
- justify-content: center;
+ justify-content: space-evenly;
+}
+
+.background-image {
+   background-color: grey;
+   height: 300px;
+   border-radius: 3.5%;
+   display: flex;
 }
 
 .Nike {
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
+    align-self: center;
 }
 .Vip {
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
+    align-self: center;
 }
 .Adidas {
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
+    align-self: center;
 }
 
 .legende {
     display: flex;
     justify-content: space-around;
 }
+

@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react';
 import '../styles/Header.css';
 import imgfrog from '../assets/frog.jpg';
 
 function Header() {
 
-  useEffect(() => {
     window.addEventListener('scroll', function() {
-      var header = document.querySelector('header');
+      const header = document.querySelector('header');
       header.classList.toggle("sticky", window.scrollY > 0);
     });
-  }, []);
 
   return (
     <header id='masthead' className='site-header fiwex show ' role='banner'>

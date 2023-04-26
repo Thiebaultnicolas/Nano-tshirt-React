@@ -108,8 +108,12 @@
     height: 35px;
     background-color:#03224c;
     padding-top: 10px;
-    
+      
   }
+
+   #scroll,html {
+  scroll-behavior: smooth;
+} 
 
   
   .button-line:hover {
@@ -137,15 +141,16 @@
 .text-slider {
   position: relative;
   animation-name: fadeInRightBig;
+
 }
 
 @keyframes fadeInRightBig {
 
 0%{
-  right: -1200px;
+  transform:translateX(-1200px);
 }
 100%{
-  right: 0;
+  transform:translateX(0px);
 }
 }
   

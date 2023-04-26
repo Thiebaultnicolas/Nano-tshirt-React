@@ -1,37 +1,54 @@
 import React from 'react'
 import '../styles/Commerce.css'
-import Nike from '../assets/t-shirt-Nike.jpg';
-import VIP from '../assets/t-shirt VIP.jpg';
-import Adidas from '../assets/t-shirt-Adidas.jpg';
+import Nike from '../assets/t-shirt-Rouge.png';
+import VIP from '../assets/t-shirt-Blanc.png';
+import Adidas from '../assets/t-shirt-Orange.png';
 
-export default function Commerce() {
+ function Commerce() {
   return (
     <>
         <h1 className='title-commerce'>Top 3 des ventes !</h1>
         <div className='display-vente'>
           <div className='display-tshirt'>
-            <img src={Nike} alt='Nike' className='Nike'/>
+            <a href='#'>
+              <div className='background-image'>
+                <img src={Nike} alt='Nike' className='Nike'/>
+              </div>
+            </a>
             <div className='legende'>
-                <p>T-Shirt Homme Nike</p>
-                <p>29.99 EUR</p>
+              <p>T-Shirt Homme Rouge</p>
+              <p>29.99 EUR</p>
             </div>
           </div>
+
           <div className='display-tshirt'>
-            <img src={VIP} alt='vip' className='Vip'/>
-            <div className='legende'>
-              <p>T-Shirt Homme VIP</p>
-              <p>99.99 EUR</p>
-            </div>
+            <a href='#'>
+              <div className='background-image'>
+                <img src={VIP} alt='vip' className='Vip'/>
+              </div>
+            </a>
+              <div className='legende'>
+                <p>T-Shirt Homme VIP</p>
+                <p>99.99 EUR</p>
+              </div>
           </div>
+
           <div className='display-tshirt'>
-            <img src={Adidas} alt='Adidas' className='Adidas'/>
+            <a href='#'>
+              <div className='background-image'>
+                <img src={Adidas} alt='Adidas' className='Adidas'/>
+              </div>
+            </a>
             <div className='legende'>
-              <p>T-Shirt Homme Adidas</p>
+              <p>T-Shirt Homme Orange</p>
               <p>29.99 EUR</p>
             </div>
           </div>
         </div> 
+
     </>
     
   )
 }
+
+export default Commerce
