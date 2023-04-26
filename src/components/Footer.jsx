@@ -18,7 +18,7 @@ function Footer() {
                 </div>
                 <div class="tableau" id="assistance">
                     <h3>Assistance</h3>       
-                    <a href="#">Centre d'aide </a>
+                    <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>
                 </div>
             </footer>  
