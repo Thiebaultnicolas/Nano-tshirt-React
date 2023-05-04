@@ -11,9 +11,7 @@
 }
 
 .background-image {
-   background-color: grey;
    height: 300px;
-   border-radius: 3.5%;
    display: flex;
 }
 
