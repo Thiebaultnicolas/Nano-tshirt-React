@@ -19,7 +19,7 @@ const Home = () => {
              <Commerce/>
         </div>
 
-        <div className='Footer-nano'>
+        <div id="footer" className='Footer-nano'>
             <Footer/>
         </div>
         </>

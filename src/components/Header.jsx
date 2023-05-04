@@ -21,10 +21,10 @@ function Header() {
                 <a href='../pages/Home.jsx'>Accueil</a>
               </li>
               <li>
-                <a href='../pages/Home.jsx'>Shop</a>
+              <a href="#scroll">Shop</a>
               </li>
               <li>
-                <a href='../pages/Home.jsx'>Contact</a>
+              <a href="#footer">Contact</a>
               </li>
             </ul>
           </div>

@@ -1,10 +1,13 @@
 .title-commerce{
     text-align: center;
+    font-size: 40px;
 }
 
 .display-vente {
  display: flex;
  justify-content: space-evenly;
+ height: 550px;
+ align-items: center;
 }
 
 .background-image {
