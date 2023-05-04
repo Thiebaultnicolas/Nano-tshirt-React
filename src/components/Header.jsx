@@ -9,25 +9,20 @@ function Header() {
     // Utilisation du Hook pour déterminer si le lien "Shop" doit être affiché
     const showShopLink = useShowShopLink(); 
 
-    // Ajout d'un écouteur d'événements qui change la classe CSS de l'élément header
-    // en fonction de la position de défilement de la page
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      header.classList.toggle("sticky", window.scrollY > 0);
-    });
-
     return (
         <header id='masthead' className='site-header fiwex show ' role='banner'>
             <div className='header-wrap'>
                 <div className='container'>
-                    <a href='../pages/Home.jsx'>
+                    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
                         <img src={imgfrog} alt='profil' className='imgfrog' />
-                    </a>
+                    </Link>
                     <div className='list'>
                         <ul>
                             <li>
                               {/* Utilisation de la balise Link de react-router-dom pour les liens internes */}
-                              <Link to="/">Accueil</Link>
+                              {/* Au clic, la page est ramenée en haut de la fenêtre grâce à la fonction scrollTo() de l'objet window */}
+                              {/* en utilisant l'option behavior pour une transition douce et animée */}
+                              <Link to="/" onClick={() => window.scrollTo(0, 0)}>Accueil</Link>
                             </li>
                             <li>
                               {/* Condition pour afficher ou non le lien "Shop" */}
