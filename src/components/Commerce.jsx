@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 
- function Commerce() {
+function Commerce() {
   return (
     <>
         <h1 className='title-commerce'>Top 3 des ventes !</h1>
@@ -19,8 +19,8 @@ import { Link } from 'react-router-dom';
               </div>
             </Link>
             <div className='legende'>
-              <p>T-Shirt Homme Rouge</p>
-              <p>29.99 EUR</p>
+              <p className='tshirt-title'>T-Shirt Homme Rouge</p>
+              <p className='tshirt-price'>29.99 EUR</p>
             </div>
           </div>
 
@@ -31,8 +31,8 @@ import { Link } from 'react-router-dom';
               </div>
             </a>
               <div className='legende'>
-                <p>T-Shirt Homme VIP</p>
-                <p>99.99 EUR</p>
+                <p className='tshirt-title'>T-Shirt Homme VIP</p>
+                <p className='tshirt-price'>99.99 EUR</p>
               </div>
           </div>
 
@@ -43,8 +43,8 @@ import { Link } from 'react-router-dom';
               </div>
             </a>
             <div className='legende'>
-              <p>T-Shirt Homme Orange</p>
-              <p>29.99 EUR</p>
+              <p className='tshirt-title'>T-Shirt Homme Orange</p>
+              <p className='tshirt-price'>29.99 EUR</p>
             </div>
           </div>
         </div> 
