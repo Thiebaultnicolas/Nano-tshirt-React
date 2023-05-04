@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './styles/Global.css'
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
+import Path from './routes/Route';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <Path />
   </React.StrictMode>
 );
 

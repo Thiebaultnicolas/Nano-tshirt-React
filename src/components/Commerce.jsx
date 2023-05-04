@@ -3,6 +3,9 @@ import '../styles/Commerce.css'
 import Nike from '../assets/t-shirt-Rouge.png';
 import VIP from '../assets/t-shirt-Blanc.png';
 import Adidas from '../assets/t-shirt-Orange.png';
+import { Link } from 'react-router-dom';
+
+
 
  function Commerce() {
   return (
@@ -10,11 +13,11 @@ import Adidas from '../assets/t-shirt-Orange.png';
         <h1 className='title-commerce'>Top 3 des ventes !</h1>
         <div className='display-vente'>
           <div className='display-tshirt'>
-            <a href='#'>
+            <Link to="/sale">  
               <div className='background-image'>
                 <img src={Nike} alt='Nike' className='Nike'/>
               </div>
-            </a>
+            </Link>
             <div className='legende'>
               <p>T-Shirt Homme Rouge</p>
               <p>29.99 EUR</p>
@@ -22,7 +25,7 @@ import Adidas from '../assets/t-shirt-Orange.png';
           </div>
 
           <div className='display-tshirt'>
-            <a href='#'>
+            <a href='../pages/sale.jsx'>
               <div className='background-image'>
                 <img src={VIP} alt='vip' className='Vip'/>
               </div>
@@ -34,7 +37,7 @@ import Adidas from '../assets/t-shirt-Orange.png';
           </div>
 
           <div className='display-tshirt'>
-            <a href='#'>
+            <a href='../pages/sale.jsx'>
               <div className='background-image'>
                 <img src={Adidas} alt='Adidas' className='Adidas'/>
               </div>

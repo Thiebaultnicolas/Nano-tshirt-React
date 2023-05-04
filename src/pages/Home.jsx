@@ -9,10 +9,10 @@ const Home = () => {
     return (
         <>
         <div>
-        <div className='first-screen'>
-            <Header/>
-            <Landing/>
-        </div>
+            <div id="header"  className='first-screen'>
+                <Header/>
+                <Landing/>
+            </div>
         </div>
        
         <div id="scroll" className='second-screen'>

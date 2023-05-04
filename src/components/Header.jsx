@@ -1,5 +1,6 @@
 import '../styles/Header.css';
 import imgfrog from '../assets/frog.jpg';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -18,7 +19,7 @@ function Header() {
           <div className='list'>
             <ul>
               <li>
-                <a href='../pages/Home.jsx'>Accueil</a>
+              <Link to="/">Accueil</Link>
               </li>
               <li>
               <a href="#scroll">Shop</a>
