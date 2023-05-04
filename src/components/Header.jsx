@@ -8,6 +8,16 @@ function Header() {
 
     // Utilisation du Hook pour déterminer si le lien "Shop" doit être affiché
     const showShopLink = useShowShopLink(); 
+    
+
+    // On ajoute un écouteur d'événement pour la fenêtre qui se déclenchera à chaque fois que la fenêtre est défilée
+    window.addEventListener('scroll', function() {
+    // On sélectionne l'élément header
+    const header = document.querySelector('header');
+    // On ajoute ou retire la classe "sticky" en fonction de la position de défilement (scroll) de la fenêtre
+    // La classe "sticky" applique un style CSS pour rendre le header collant (sticky) en haut de la page
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
 
     return (
         <header id='masthead' className='site-header fiwex show ' role='banner'>
