@@ -5,7 +5,12 @@
     -moz-animation: Background 25s ease infinite;
     animation: Background 25s ease infinite;
     width: 100%;
-    height: 930px;
+    height: 250px; 
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+   
   }
   
   @-webkit-keyframes Background {
@@ -44,13 +49,6 @@
     }
   }
 
-.pieddepage {
-    height: 250px; 
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    
- }
  
  .pieddepage h3 {
     font-size: 18px;

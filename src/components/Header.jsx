@@ -17,6 +17,8 @@ function Header() {
     // On ajoute ou retire la classe "sticky" en fonction de la position de défilement (scroll) de la fenêtre
     // La classe "sticky" applique un style CSS pour rendre le header collant (sticky) en haut de la page
     header.classList.toggle("sticky", window.scrollY > 0);
+
+    
   });
 
     return (
