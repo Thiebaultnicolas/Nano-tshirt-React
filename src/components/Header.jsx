@@ -4,7 +4,7 @@ import imgfrog from '../assets/frog.jpg';
 import useShowShopLink from '../Hook/useShowShopLink'; // Importation du Hook personnalisé
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ salePage }) {
 
     // Utilisation du Hook pour déterminer si le lien "Shop" doit être affiché
     const showShopLink = useShowShopLink(); 
@@ -22,7 +22,7 @@ function Header() {
   });
 
     return (
-        <header id='masthead' className='site-header fiwex show ' role='banner'>
+      <header id='masthead' className={`site-header fiwex show`} role='banner' style={salePage ? {backgroundColor: "#03224c"} : {}}>
             <div className='header-wrap'>
                 <div className='container'>
                     <Link to="/" onClick={() => window.scrollTo(0, 0)}>

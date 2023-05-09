@@ -4,9 +4,11 @@ import '../styles/Tshirt.css';
 
 function Tshirt() {
   const [selectedSize, setSelectedSize] = useState('');
+  const [showSizes, setShowSizes] = useState(false);
 
   const handleSizeClick = (size) => {
     setSelectedSize(size);
+    setShowSizes(false);
   };
 
   return (
@@ -16,16 +18,20 @@ function Tshirt() {
           <h4>T-Shirt Rouge pour Homme Manche Courte</h4>
           <h5>Prix : 29.99 EUR</h5>
           <div className="size-select">
-            <button onClick={() => handleSizeClick('')}>
+            <button onClick={() => setShowSizes(!showSizes)}>
               {selectedSize ? selectedSize : 'Taille'}
             </button>
-            <div className={`size-options ${selectedSize ? 'visible' : ''}`}>
-              <button onClick={() => handleSizeClick('XS')} className={selectedSize === 'XS' ? 'selected' : ''}>XS</button>
-              <button onClick={() => handleSizeClick('S')} className={selectedSize === 'S' ? 'selected' : ''}>S</button>
-              <button onClick={() => handleSizeClick('M')} className={selectedSize === 'M' ? 'selected' : ''}>M</button>
-              <button onClick={() => handleSizeClick('L')} className={selectedSize === 'L' ? 'selected' : ''}>L</button>
-              <button onClick={() => handleSizeClick('XL')} className={selectedSize === 'XL' ? 'selected' : ''}>XL</button>
-              <button onClick={() => handleSizeClick('XXL')} className={selectedSize === 'XXL' ? 'selected' : ''}>XXL</button>
+            <div className={`size-options ${showSizes ? 'visible' : ''}`}>
+              {showSizes && (
+                <>
+                  <button onClick={() => handleSizeClick('XS')} className={selectedSize === 'XS' ? 'selected' : ''}>XS</button>
+                  <button onClick={() => handleSizeClick('S')} className={selectedSize === 'S' ? 'selected' : ''}>S</button>
+                  <button onClick={() => handleSizeClick('M')} className={selectedSize === 'M' ? 'selected' : ''}>M</button>
+                  <button onClick={() => handleSizeClick('L')} className={selectedSize === 'L' ? 'selected' : ''}>L</button>
+                  <button onClick={() => handleSizeClick('XL')} className={selectedSize === 'XL' ? 'selected' : ''}>XL</button>
+                  <button onClick={() => handleSizeClick('XXL')} className={selectedSize === 'XXL' ? 'selected' : ''}>XXL</button>
+                </>
+              )}
             </div>
           </div>
         </div>

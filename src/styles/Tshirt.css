@@ -1,69 +1,71 @@
+.product-details {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  .product-details {
-   text-align: center;
-   display: flex;
-   justify-content: space-evenly;
-  }
-  
-  .product-info {
-    text-align: center;
-  }
-  
-  .product-description {
-    text-align:-webkit-center;
-    line-height: 28px;
-  }
+.product-info {
+  text-align: center;
+}
 
-  .Red {
-    width: 250px;
-    height: 250px;
-  }
+.product-description {
+  text-align: -webkit-center;
+  line-height: 28px;
+}
 
-  .size-select {
-    position: relative;
-  }
-  
-  .size-select button {
-    background-color: #ff595e;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .size-select .size-options {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-  }
-  
-  .size-select .size-options.visible {
-    display: block;
-  }
-  
+.Red {
+  width: 250px;
+  height: 250px;
+}
+
+.size-select {
+  position: relative;
+}
+
+.size-select button {
+  background-color: #03224c;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.size-select .size-options {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: none;
+  white-space: nowrap;
+}
+
+.size-select .size-options.visible {
+  display: block;
+}
+
+.size-select .size-options button {
+  background-color: #fff;
+  border: 1px solid #03224c;
+  color: #03224c;
+  font-size: 14px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.size-select .size-options button.selected {
+  background-color: #03224c;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
   .size-select .size-options button {
-    background-color: #fff;
-    border: 1px solid #ff595e;
-    color: #ff595e;
-    font-size: 14px;
-    padding: 4px 8px;
-    margin-right: 8px;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin-right: 4px;
   }
-  
-  .size-select .size-options button.selected {
-    background-color: #ff595e;
-    color: #fff;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .size-select .size-options button {
-      font-size: 12px;
-      padding: 2px 4px;
-      margin-right: 4px;
-    }
-  }
+}

@@ -1,10 +1,14 @@
 import React from 'react'
 import '../styles/Footer.css'
 
-function Footer() {
+function Footer({ isSalePage }) {
+
+     // Ajout de la classe conditionnellement
+  const footerClass = isSalePage ? 'pieddepage footerSalePage' : 'pieddepage';
+
   return (
 
-    <footer class="pieddepage">
+     <footer className={footerClass}>
                 <div class="tableau"> 
                     <h3>A propos</h3>     
                     <a href="#">Fonctionnement du site </a>
