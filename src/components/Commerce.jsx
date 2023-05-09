@@ -25,11 +25,11 @@ function Commerce() {
           </div>
 
           <div className='display-tshirt'>
-            <a href='../pages/sale.jsx'>
+            <Link to="/sale-orange">
               <div className='background-image'>
                 <img src={VIP} alt='vip' className='Vip'/>
               </div>
-            </a>
+            </Link>
               <div className='legende'>
                 <p className='tshirt-title'>T-Shirt Homme VIP</p>
                 <p className='tshirt-price'>99.99 EUR</p>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import tshirtRouge from '../assets/t-shirt-Rouge.png';
+import tshirtBlanc from '../assets/t-shirt-Blanc.png';
 import '../styles/Tshirt.css';
 
 function Tshirt() {
@@ -15,8 +15,8 @@ function Tshirt() {
     <div className="product-content">
       <div className="product-details">
         <div className="product-info">
-          <h4>T-Shirt Rouge pour Homme Manche Courte</h4>
-          <h5>Prix : 29.99 EUR</h5>
+          <h4>T-Shirt VIP pour Homme Manche Courte</h4>
+          <h5>Prix : 99.99 EUR</h5>
           <div className="size-select">
             <button onClick={() => setShowSizes(!showSizes)}>
               {selectedSize ? selectedSize : 'Taille'}
@@ -34,9 +34,12 @@ function Tshirt() {
               )}
             </div>
           </div>
+          <div className="add-to-cart">
+            <button className="add-to-cart-btn" disabled>Ajouter au panier</button>
+          </div>
         </div>
         <div className="product-image">
-          <img src={tshirtRouge} alt="T-shirt rouge" className='Red' />
+          <img src={tshirtBlanc} alt="T-shirt rouge" className='Red' />
         </div>
         <div className="product-description">
           <p>COMPOSITION & CARACTÈRISTIQUES <br />

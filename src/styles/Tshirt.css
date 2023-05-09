@@ -6,16 +6,20 @@
 
 .product-info {
   text-align: center;
+  align-self: center;
+  padding-right: 40px;
 }
 
 .product-description {
   text-align: -webkit-center;
+  align-self: center;
   line-height: 28px;
+  padding-left: 15px;
 }
 
 .Red {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
 }
 
 .size-select {
@@ -69,3 +73,28 @@
     margin-right: 4px;
   }
 }
+
+.add-to-cart {
+  margin-top: 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #03224c;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: not-allowed;
+}
+
+.size-select button {
+  background-color: #03224c;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

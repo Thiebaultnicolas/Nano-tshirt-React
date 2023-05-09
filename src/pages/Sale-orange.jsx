@@ -1,15 +1,17 @@
 import React from 'react';
 import Header from '../components/Header';
-import Tshirt from '../components/Tshirt';
+import Tshirt from '../components/Tshirt-blanc';
 import Footer from '../components/Footer';
 import "../styles/Global.css";
 
-export const Sale = () => {
+export const SaleOrange = () => {
   return (
     <>
       <div className="sale-page">
         <Header salePage={true} />
-        <Tshirt />
+        <div className="main-content">
+          <Tshirt />
+        </div>
         <Footer isSalePage={true} />
       </div>
     </>
