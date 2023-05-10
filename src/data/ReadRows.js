@@ -1,8 +1,16 @@
-import { createClient } from '@supabase/supabase-js'
 import ConnectDB from './ConnectDB'
 
-function ReadRows () {
+async function ReadRows () {
 const SupaBase = ConnectDB()
+
+
+let response  = await SupaBase
+  .from('Produit')
+  .select('*')
+
+return response.data;
+
 }
+
 
 export default ReadRows 

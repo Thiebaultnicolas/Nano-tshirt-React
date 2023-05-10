@@ -1,30 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Commerce.css'
 import Nike from '../assets/t-shirt-Rouge.png';
 import VIP from '../assets/t-shirt-Blanc.png';
 import Adidas from '../assets/t-shirt-Orange.png';
 import { Link } from 'react-router-dom';
+import ReadRows from '../data/ReadRows';
 
 
 
 function Commerce() {
+
+      const [Produits, setProduits] = useState([]);
+
+    async function test() {
+        // You can await here
+        const response = await ReadRows();
+        setProduits(response)
+      }
+    useEffect(() => {
+        test()
+      }, []);
+
   return (
     <>
         <h1 className='title-commerce'>Top 3 des ventes !</h1>
         <div className='display-vente'>
-          <div className='display-tshirt'>
-            <Link to="/sale">  
-              <div className='background-image'>
-                <img src={Nike} alt='Nike' className='Nike'/>
-              </div>
-            </Link>
-            <div className='legende'>
-              <p className='tshirt-title'>T-Shirt Homme Rouge</p>
-              <p className='tshirt-price'>29.99 EUR</p>
-            </div>
+        {Produits.map((value) => {
+          return (
+        <div key={value} className='display-tshirt'>
+          <Link to="/sale">  
+          <div className='background-image'>
+            <img src={value.Image} alt='Nike' className='Nike'/>
           </div>
+        </Link>
+        <div className='legende'>
+          <p className='tshirt-title'>{value.Title}</p>
+          <p className='tshirt-price'>{value.Price} EUR</p>
+        </div>
+        </div>
+          )})
+          }
 
-          <div className='display-tshirt'>
+          {/* <div className='display-tshirt'>
             <Link to="/sale-orange">
               <div className='background-image'>
                 <img src={VIP} alt='vip' className='Vip'/>
@@ -46,7 +63,7 @@ function Commerce() {
               <p className='tshirt-title'>T-Shirt Homme Orange</p>
               <p className='tshirt-price'>29.99 EUR</p>
             </div>
-          </div>
+          </div> */}
         </div> 
 
     </>
