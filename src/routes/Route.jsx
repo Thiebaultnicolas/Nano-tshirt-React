@@ -1,8 +1,7 @@
 import React from 'react'
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import Home from '../pages/Home'
-import { Sale } from '../pages/Sale-rouge'
-import { SaleOrange } from '../pages/Sale-orange'
+import { Sale } from '../pages/Sale'
 import Error404 from '../pages/Error404'
 
 function Path() {
@@ -11,7 +10,6 @@ function Path() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/sale" element={<Sale/>}/>
-            <Route path="/sale-orange" element={<SaleOrange/>}/>
             <Route path="/*" element={<Error404/>} />
         </Routes>
     </BrowserRouter >

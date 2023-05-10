@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import tshirtBlanc from '../assets/t-shirt-Blanc.png';
+import React, { useState, useEffect } from 'react';
 import '../styles/Tshirt.css';
+import { useSearchParams } from 'react-router-dom';
+import ReadRows from '../data/ReadRows';
 
 function Tshirt() {
   const [selectedSize, setSelectedSize] = useState('');
@@ -11,12 +12,29 @@ function Tshirt() {
     setShowSizes(false);
   };
 
+  
+  const [searchParams] = useSearchParams();
+  const Url = searchParams.get('id')
+
+  const [Produit, setProduit] = useState([]);
+
+    async function test() {
+        // You can await here
+        const response = await ReadRows();
+      
+        const Filtrage = response.find(response => parseInt(response.id) === parseInt(Url))
+        setProduit(Filtrage);
+      }
+    useEffect(() => {
+        test()
+      }, []);
+      // setTimeout(() => console.log(Produit), 500)
   return (
     <div className="product-content">
       <div className="product-details">
         <div className="product-info">
-          <h4>T-Shirt VIP pour Homme Manche Courte</h4>
-          <h5>Prix : 99.99 EUR</h5>
+          <h4>{Produit.Title}</h4>
+          <h5>{Produit.Price} EUR</h5>
           <div className="size-select">
             <button onClick={() => setShowSizes(!showSizes)}>
               {selectedSize ? selectedSize : 'Taille'}
@@ -39,7 +57,7 @@ function Tshirt() {
           </div>
         </div>
         <div className="product-image">
-          <img src={tshirtBlanc} alt="T-shirt rouge" className='Red' />
+          <img src={Produit.Image}  alt="T-shirt rouge" className='Red' />
         </div>
         <div className="product-description">
           <p>COMPOSITION & CARACTÈRISTIQUES <br />

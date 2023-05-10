@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Commerce.css'
-import Nike from '../assets/t-shirt-Rouge.png';
-import VIP from '../assets/t-shirt-Blanc.png';
-import Adidas from '../assets/t-shirt-Orange.png';
 import { Link } from 'react-router-dom';
 import ReadRows from '../data/ReadRows';
 
@@ -28,7 +25,7 @@ function Commerce() {
         {Produits.map((value) => {
           return (
         <div key={value} className='display-tshirt'>
-          <Link to="/sale">  
+          <Link to={"/sale?id="+ value.id}>  
           <div className='background-image'>
             <img src={value.Image} alt='Nike' className='Nike'/>
           </div>
