@@ -4,8 +4,11 @@ import Commerce from '../components/Commerce'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../styles/Global.css'
+import ReadRows from '../data/ReadRows.js'
 
 const Home = () => {
+
+    ReadRows()
     return (
         <>
         <div>
