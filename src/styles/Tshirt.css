@@ -24,6 +24,7 @@
 
 .size-select {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .size-select button {
@@ -86,6 +87,7 @@
   padding: 8px 12px;
   border-radius: 4px;
   cursor: not-allowed;
+  margin-top: 25px;
 }
 
 .size-select button {
