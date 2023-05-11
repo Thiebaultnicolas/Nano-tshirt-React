@@ -18,7 +18,7 @@ function Tshirt() {
 
   const [Produit, setProduit] = useState([]);
 
-    async function test() {
+    async function DisplayData() {
         // You can await here
         const response = await ReadRows();
       
@@ -26,7 +26,7 @@ function Tshirt() {
         setProduit(Filtrage);
       }
     useEffect(() => {
-        test()
+      DisplayData()
       }, []);
       // setTimeout(() => console.log(Produit), 500)
   return (
