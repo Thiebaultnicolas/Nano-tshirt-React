@@ -6,6 +6,7 @@ const SupaBase = ConnectDB()
 let response  = await SupaBase
   .from('Produit')
   .select('*')
+  .order('id', { ascending: true })
   .limit(3)
 
 return response.data;

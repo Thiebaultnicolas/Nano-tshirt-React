@@ -1,11 +1,11 @@
 import ConnectDB from './ConnectDB'
 
-async function updateProduct(id, title, price, image) {
+async function updateProduct(id, Title, Price, Image) {
   const supabase = ConnectDB()
   
   let { data: product, error } = await supabase
     .from('Produit')
-    .update({ title, price, image })
+    .update({ Title, Price, Image })
     .match({ id })
 
   if (error) console.error('Error updating product: ', error)
