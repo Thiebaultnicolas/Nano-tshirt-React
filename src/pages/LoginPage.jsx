@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom"; // Importer useHistory de react-router-dom
+import { useNavigate } from 'react-router-dom';
 import ConnectDB from "../data/ConnectDB";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const history = useHistory(); // Créer une instance de useHistory
+  const navigate = useNavigate();
   const supabase = ConnectDB();
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const { user, error } = await supabase.auth.signIn({
+    const { error } = await supabase.auth.signIn({
       email: email,
       password: password,
     });
@@ -20,7 +20,7 @@ function LoginPage() {
     if (error) {
       alert("Erreur lors de la connexion !");
     } else {
-      history.push('/dashboard'); // Redirigez l'utilisateur vers le tableau de bord
+      navigate('/dashboard');
     }
   };
 
