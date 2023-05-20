@@ -9,18 +9,18 @@ function Footer({ isSalePage }) {
   return (
 
      <footer className={footerClass}>
-                <div class="tableau"> 
+                <div className="tableau"> 
                     <h3>A propos</h3>     
                     <a href="#">Fonctionnement du site </a>
                     <a href="#">Conditions générales de vente </a>
                     <a href="#">Données et confidentialité</a>
                 </div>
-                <div class="tableau" id="nos_hebergements">
+                <div className="tableau" id="nos_hebergements">
                     <h3> Nos meilleurs ventes</h3>       
                     <a href="#">Charte qualité</a>
                     <a href="#">Soumettre vos offres</a>
                 </div>
-                <div class="tableau" id="assistance">
+                <div className="tableau" id="assistance">
                     <h3>Assistance</h3>       
                     <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>

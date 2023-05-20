@@ -3,6 +3,12 @@ import '../styles/Tshirt.css';
 import { useSearchParams } from 'react-router-dom';
 import ReadRows from '../data/ReadRows';
 
+async function DisplayData(Url, setProduit) {
+  const response = await ReadRows();
+  const Filtrage = response.find(response => parseInt(response.id) === parseInt(Url))
+  setProduit(Filtrage);
+}
+
 function Tshirt() {
   const [selectedSize, setSelectedSize] = useState('');
   const [showSizes, setShowSizes] = useState(false);
@@ -12,23 +18,15 @@ function Tshirt() {
     setShowSizes(false);
   };
 
-  
   const [searchParams] = useSearchParams();
   const Url = searchParams.get('id')
 
   const [Produit, setProduit] = useState([]);
 
-    async function DisplayData() {
-        // You can await here
-        const response = await ReadRows();
-      
-        const Filtrage = response.find(response => parseInt(response.id) === parseInt(Url))
-        setProduit(Filtrage);
-      }
-    useEffect(() => {
-      DisplayData()
-      }, []);
-      // setTimeout(() => console.log(Produit), 500)
+  useEffect(() => {
+    DisplayData(Url, setProduit);
+  }, [Url]);
+
   return (
     <div className="product-content">
       <div className="product-details">
