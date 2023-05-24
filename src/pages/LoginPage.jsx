@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
 import ReadRows from "../data/ReadRows";
+import Dashboard from "./DashBoard.jsx";
 
 function LoginPage() {
-  const [email, setEmail] = useState("");
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
-
-  const navigate = useNavigate();
+  const [isConnect, setConnect] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -14,20 +13,25 @@ function LoginPage() {
     const response  =  await ReadRows('Admin');
     const userRequest = response[0].User
     const passwordRequest = response[0].Password
-    if (userRequest === email && passwordRequest === password) {
-      navigate('/dashboard');
+    if (userRequest === user && passwordRequest === password) {
+      setConnect(true);
     } else {
       alert("Erreur lors de la connexion !");
     }
   };
+  
+  if (isConnect === true ) {
+    return(<Dashboard/>)
+  }
 
-  return (
+  return (  
     <form onSubmit={handleLogin}>
-      <input  value={email} onChange={(e) => setEmail(e.target.value)} />
+      <input  value={user} onChange={(e) => setUser(e.target.value)} />
       <input  value={password} onChange={(e) => setPassword(e.target.value)} />
       <button>Se connecter</button>
     </form>
   );
 }
+
 
 export default LoginPage;
