@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import ReadRows from '../data/ReadRows';
 
 async function DisplayData(Url, setProduit) {
-  const response = await ReadRows();
+  const response = await ReadRows('Produit');
   const Filtrage = response.find(response => parseInt(response.id) === parseInt(Url))
   setProduit(Filtrage);
 }

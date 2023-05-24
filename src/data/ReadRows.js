@@ -1,10 +1,10 @@
 import ConnectDB from './ConnectDB'
 
-async function ReadRows () {
+async function ReadRows (Table) {
 const SupaBase = ConnectDB()
 
 let response  = await SupaBase
-  .from('Produit')
+  .from(Table)
   .select('*')
   .order('id', { ascending: true })
   .limit(3)

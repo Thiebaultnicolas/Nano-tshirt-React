@@ -8,7 +8,7 @@ function Commerce() {
 
   async function test() {
     // You can await here
-    const response = await ReadRows();
+    const response = await ReadRows('Produit');
     setProduits(response);
   }
   useEffect(() => {
