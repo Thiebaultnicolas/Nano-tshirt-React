@@ -18,7 +18,7 @@ function Dashboard() {
 
   return (
     <>
-      <h1>salut mon pote</h1>
+      <h1>Modification des produits : </h1>
       {Produits.map((value) => {
         return (
          <DasboardForm propsForm={value}/>
