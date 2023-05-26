@@ -1,7 +1,7 @@
 
 # Nano-tshirt-React
 
-<a href="#description-fr-">README en Français</a> - <a href="#en-description">English README</a>
+<a href="#fr-description-">README en Français</a> - <a href="#en-description">English README</a>
 
 ## 1 : EN Description:
 
