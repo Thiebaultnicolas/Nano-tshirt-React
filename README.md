@@ -1,8 +1,7 @@
 
 # Nano-tshirt-React
 
-# 1 : EN
-## Description:
+# 1 : EN Description:
 
 Nano-tshirt-React is a test project for implementing a t-shirt sales website. The primary goal of the project was to allow the client to modify their sale products (price and title) without needing to go through the developer. For this, I used Supabase to create a product table (with each product having an ID, title, price, and image) and an admin table.
 
@@ -50,8 +49,7 @@ Once logged in, you will be redirected to the dashboard where you can modify the
 
 ---
 
-# 2 : FR
-## Description:
+# 2 : FR Description:
 
 Nano-tshirt-React est un projet test pour la mise en place d'un site de vente de t-shirts. Le but principal du projet était de permettre au client de modifier ses produits en vente (prix et titre) sans avoir à passer par le développeur. 
 
