@@ -22,15 +22,15 @@ The client can log into their dashboard via a login interface at the URL localho
 
 -   Ensure that Node.js is installed on your machine.
 
-2. Clone the Repository:
+2. Clone the Repository :
 
 -   `git clone https://github.com/Thiebaultnicolas/Nano-tshirt-React.git`
 
-3. Install All Front-End Dependencies:
+3. Install All Front-End Dependencies :
 
 -   `npm install` or `yarn`
 
-4. Lancer le front-end:
+4. Launch the Front-End :
 
 -   `npm run start` ou `yarn start`
 
@@ -81,19 +81,19 @@ Le client peut se connecter à son tableau de bord via une interface d'identific
 
 -   Assurez-vous que Node.js est installé sur votre machine.
 
-2. Cloner le repository:
+2. Cloner le repository :
 
 -   `git clone https://github.com/Thiebaultnicolas/Nano-tshirt-React.git`
 
-3. Installer toutes les dépendances pour le front-end:
+3. Installer toutes les dépendances pour le front-end :
 
 -   `npm install` ou `yarn`
 
-4. Lancer le front-end:
+4. Lancer le front-end :
 
 -   `npm run start` ou `yarn start`
 
-Le front-end sera lancé à l'URL:
+Le front-end sera lancé à l'URL :
 `http://localhost:3000/`.
 
 
