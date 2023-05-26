@@ -68,15 +68,24 @@ Supabase
 
 ## Installation :
 
-Assurez-vous que Node.js est installé sur votre machine.
+1. Node.js:
 
-Clonez ce dépôt GitHub sur votre machine.
+-   Assurez-vous que Node.js est installé sur votre machine.
 
-Naviguez jusqu'au dossier du projet.
- 
-Installez les dépendances en utilisant la commande ```npm install```.
+2. Cloner le repository:
 
-Lancez le projet avec la commande ```npm run start```.
+-   `git clone https://github.com/Thiebaultnicolas/Nano-tshirt-React.git`
+
+3. Installer toutes les dépendances pour le front-end:
+
+-   `npm install` ou `yarn`
+
+4. Lancer le front-end:
+
+-   `npm run start` ou `yarn start`
+
+Le front-end sera lancé à l'URL:
+`http://localhost:3000/`.
 
 
 ## Utilisation : 
