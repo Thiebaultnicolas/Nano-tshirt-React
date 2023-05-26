@@ -41,7 +41,7 @@ The front-end will be launched at the URL:
 
 -  Open your browser and navigate to localhost:3000/login. 
 
--  Log in with the username "nano" and password "123456". 
+-  Log in with the username ```nano``` and password ```123456```. 
 
 -  Once logged in, you will be redirected to the dashboard where you can modify the product details.
 
@@ -101,7 +101,7 @@ Le front-end sera lancé à l'URL :
 
 -  Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/```login```.
 
--  Connectez-vous avec l'identifiant "nano" et le mot de passe "123456". 
+-  Connectez-vous avec l'identifiant ```nano``` et le mot de passe ```123456```. 
 
 -  Une fois connecté, vous serez redirigé vers le tableau de bord où vous pourrez modifier les détails des produits.
 
