@@ -16,17 +16,26 @@ The client can log into their dashboard via a login interface at the URL localho
 
 -  Supabase
 
-## Installation :  
+## Installation :
 
-Ensure that you have Node.js installed on your machine. 
+1. Node.js:
 
-Clone this GitHub repository on your machine. 
+-   Ensure that Node.js is installed on your machine.
 
-Navigate to the project folder. 
+2. Clone the Repository:
 
-Install the dependencies using the command ```npm install```.
+-   `git clone https://github.com/Thiebaultnicolas/Nano-tshirt-React.git`
 
-Launch the project with the command ```npm run start```.
+3. Install All Front-End Dependencies:
+
+-   `npm install` or `yarn`
+
+4. Lancer le front-end:
+
+-   `npm run start` ou `yarn start`
+
+The front-end will be launched at the URL:
+`http://localhost:3000/`.
 
 ## Usage : 
 
@@ -90,7 +99,7 @@ Le front-end sera lancé à l'URL:
 
 ## Utilisation : 
 
--  Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/login.
+-  Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/```login```.
 
 -  Connectez-vous avec l'identifiant "nano" et le mot de passe "123456". 
 
