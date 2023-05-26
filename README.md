@@ -2,7 +2,7 @@
 
 <a href="#description-fr-">README en Français</a> - <a href="#en-description">English README</a>
 
-## EN Description:
+## EN Description :
 
 Nano-tshirt-React is a test project for implementing a t-shirt sales website. The primary goal of the project was to allow the client to modify their sale products (price and title) without needing to go through the developer. For this, I used Supabase to create a product table (with each product having an ID, title, price, and image) and an admin table.
 
