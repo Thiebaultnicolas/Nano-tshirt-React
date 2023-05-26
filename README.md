@@ -36,6 +36,20 @@ Log in with the username "nano" and password "123456".
 
 Once logged in, you will be redirected to the dashboard where you can modify the product details.
 
+## Built With:
+
+-   [Visual Studio Code](https://code.visualstudio.com/) - Text editor
+-   [Create React App](https://create-react-app.dev/) - Toolkit created by Facebook, which is the reference for initiating a React project
+-   [React Router V6](https://reactrouter.com/) - Routing library for React
+-   [GitHub](https://github.com/) - Version control tool
+-   [GitHub Pages](https://pages.github.com/) - Hosting tool
+
+## Author:
+
+**Thiebault Nicolas**: [**GitHub**](https://github.com/Thiebaultnicolas) - [**Portfolio**](https://thiebault-nicolas.fr/)
+
+---
+
 # 2 : FR
 ## Description:
 
@@ -73,5 +87,17 @@ Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/login.
 Connectez-vous avec l'identifiant "nano" et le mot de passe "123456". 
 
 Une fois connecté, vous serez redirigé vers le tableau de bord où vous pourrez modifier les détails des produits.
+
+## Développé avec :
+
+-   [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de texte
+-   [Create React App](https://create-react-app.dev/) - Boîte à outils créée par Facebook, qui est la référence pour initier un projet React
+-   [React Router V6](https://reactrouter.com/) - Bibliothèque de routage pour React
+-   [GitHub](https://github.com/) - Outil de gestion de versions
+-   [GitHub Pages](https://pages.github.com/) - Outil d’hébergement
+
+## Auteur :
+
+**Thiebault Nicolas** : [**GitHub**](https://github.com/Thiebaultnicolas) - [**Portfolio**](https://thiebault-nicolas.fr/)
 
 
