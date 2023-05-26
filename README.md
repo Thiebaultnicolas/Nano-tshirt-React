@@ -12,9 +12,9 @@ The client can log into their dashboard via a login interface at the URL localho
 
 ## Technologies Used :
 
-React
+-  React
 
-Supabase
+-  Supabase
 
 ## Installation :  
 
@@ -30,11 +30,11 @@ Launch the project with the command ```npm run start```.
 
 ## Usage : 
 
-Open your browser and navigate to localhost:3000/login. 
+-  Open your browser and navigate to localhost:3000/login. 
 
-Log in with the username "nano" and password "123456". 
+-  Log in with the username "nano" and password "123456". 
 
-Once logged in, you will be redirected to the dashboard where you can modify the product details.
+-  Once logged in, you will be redirected to the dashboard where you can modify the product details.
 
 ## Built With :
 
@@ -62,9 +62,9 @@ Le client peut se connecter à son tableau de bord via une interface d'identific
 
 ## Technologies Utilisées :
 
-React
+-  React
 
-Supabase
+-  Supabase
 
 ## Installation :
 
@@ -90,11 +90,11 @@ Le front-end sera lancé à l'URL:
 
 ## Utilisation : 
 
-Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/login.
+-  Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/login.
 
-Connectez-vous avec l'identifiant "nano" et le mot de passe "123456". 
+-  Connectez-vous avec l'identifiant "nano" et le mot de passe "123456". 
 
-Une fois connecté, vous serez redirigé vers le tableau de bord où vous pourrez modifier les détails des produits.
+-  Une fois connecté, vous serez redirigé vers le tableau de bord où vous pourrez modifier les détails des produits.
 
 ## Développé avec :
 
