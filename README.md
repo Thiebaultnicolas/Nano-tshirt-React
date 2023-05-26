@@ -74,7 +74,7 @@ Clonez ce dépôt GitHub sur votre machine.
 
 Naviguez jusqu'au dossier du projet.
  
-Installez les dépendances en utilisant la commande``` npm install```.
+Installez les dépendances en utilisant la commande ``` npm install```.
 
 Lancez le projet avec la commande ```npm run start```.
 
