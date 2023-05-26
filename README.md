@@ -1,103 +1,99 @@
 
 # Nano-tshirt-React
 
-<a href="#fr-description-">README en Français</a> - <a href="#en-description">English README</a>
+[README en Français](#fr-description) - [English README](#en-description)
 
-## 1 : EN Description:
+## 1: English Description
 
 Nano-tshirt-React is a test project for implementing a t-shirt sales website. The primary goal of the project was to allow the client to modify their sale products (price and title) without needing to go through the developer. For this, I used Supabase to create a product table (with each product having an ID, title, price, and image) and an admin table.
 
-## Objective:
+## Objective
 
 The client can log into their dashboard via a login interface at the URL localhost:3000/login (using the username "nano" and the password "123456"). This gives them access to a form that allows them to modify the products on the site.
 
-## Technologies Used:
+## Technologies Used
 
 React
 
 Supabase
 
-## Installation:  
+## Installation
 
-Ensure that you have Node.js installed on your machine. 
+Ensure that you have Node.js installed on your machine.
 
-Clone this GitHub repository on your machine. 
+Clone this GitHub repository on your machine.
 
-Navigate to the project folder. 
+Navigate to the project folder.
 
-Install the dependencies using the command ```npm install```.
+Install the dependencies using the command `npm install`.
 
-Launch the project with the command ```npm run start```.
+Launch the project with the command `npm run start`.
 
-## Usage: 
+## Usage
 
-Open your browser and navigate to localhost:3000/login. 
+Open your browser and navigate to localhost:3000/login.
 
-Log in with the username "nano" and password "123456". 
+Log in with the username "nano" and password "123456".
 
 Once logged in, you will be redirected to the dashboard where you can modify the product details.
 
-## Built With:
+## Built With
 
--   [Visual Studio Code](https://code.visualstudio.com/) - Text editor
--   [Create React App](https://create-react-app.dev/) - Toolkit created by Facebook, which is the reference for initiating a React project
--   [React Router V6](https://reactrouter.com/) - Routing library for React
--   [GitHub](https://github.com/) - Version control tool
+- [Visual Studio Code](https://code.visualstudio.com/) - Text editor
+- [Create React App](https://create-react-app.dev/) - Toolkit created by Facebook, which is the reference for initiating a React project
+- [React Router V6](https://reactrouter.com/) - Routing library for React
+- [GitHub](https://github.com/) - Version control tool
 
+## Author
 
-## Author:
-
-**Thiebault Nicolas**: [**GitHub**](https://github.com/Thiebaultnicolas) - [**Portfolio**](https://thiebault-nicolas.fr/)
+**Thiebault Nicolas**: [GitHub](https://github.com/Thiebaultnicolas) - [Portfolio](https://thiebault-nicolas.fr/)
 
 ---
 
-## 2 : FR Description:
+## 2: Description en Français
 
-Nano-tshirt-React est un projet test pour la mise en place d'un site de vente de t-shirts. Le but principal du projet était de permettre au client de modifier ses produits en vente (prix et titre) sans avoir à passer par le développeur. 
+Nano-tshirt-React est un projet test pour la mise en place d'un site de vente de t-shirts. Le but principal du projet était de permettre au client de modifier ses produits en vente (prix et titre) sans avoir à passer par le développeur.
 
 Pour cela, j'ai utilisé Supabase pour créer une table produits (avec chaque produit ayant un ID, titre, prix, et image) et une table admin.
 
-## Objectif: 
+## Objectif
 
-Le client peut se connecter à son tableau de bord via une interface d'identification à l'URL localhost:3000/login (avec l'identifiant "nano" et le mot de passe "123456").Cela lui donne accès à un formulaire qui lui permet de modifier les produits du site.
+Le client peut se connecter à son tableau de bord via une interface d'identification à l'URL localhost:3000/login (avec l'identifiant "nano" et le mot de passe "123456"). Cela lui donne accès à un formulaire qui lui permet de modifier les produits du site.
 
-## Technologies Utilisées:
+## Technologies Utilisées
 
 React
 
 Supabase
 
-## Installation:
+## Installation
 
 Assurez-vous que Node.js est installé sur votre machine.
 
 Clonez ce dépôt GitHub sur votre machine.
 
 Naviguez jusqu'au dossier du projet.
- 
-Installez les dépendances en utilisant la commande``` npm install```.
 
-Lancez le projet avec la commande ```npm run start```.
+Installez les dépendances en utilisant la commande `npm install`.
 
+Lancez le projet avec la commande `npm run start`.
 
-## Utilisation: 
+## Utilisation
 
 Ouvrez votre navigateur et naviguez jusqu'à localhost:3000/login.
 
-Connectez-vous avec l'identifiant "nano" et le mot de passe "123456". 
+Connectez-vous avec l'identifiant "nano" et le mot de passe "123456".
 
 Une fois connecté, vous serez redirigé vers le tableau de bord où vous pourrez modifier les détails des produits.
 
-## Développé avec :
+## Développé avec
 
--   [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de texte
--   [Create React App](https://create-react-app.dev/) - Boîte à outils créée par Facebook, qui est la référence pour initier un projet React
--   [React Router V6](https://reactrouter.com/) - Bibliothèque de routage pour React
--   [GitHub](https://github.com/) - Outil de gestion de versions
+- [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de texte
+- [Create React App](https://create-react-app.dev/) - Boîte à outils créée par Facebook, qui est la référence pour initier un projet React
+- [React Router V6](https://reactrouter.com/) - Bibliothèque de routage pour React
+- [GitHub](https://github.com/) - Outil de gestion de versions
 
+## Auteur
 
-## Auteur :
-
-**Thiebault Nicolas** : [**GitHub**](https://github.com/Thiebaultnicolas) - [**Portfolio**](https://thiebault-nicolas.fr/)
-
+**Thiebault Nicolas** : [GitHub](https://github.com/Thiebaultnicolas) - [Portfolio](https://thiebault-nicolas.fr/)
 
