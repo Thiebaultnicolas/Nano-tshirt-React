@@ -53,7 +53,7 @@ React
 
 Supabase
 
-## Installation
+## Installation:
 
 Assurez-vous que Node.js est installé sur votre machine.
 
